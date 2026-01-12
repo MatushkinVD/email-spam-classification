@@ -19,3 +19,23 @@
  - Файл "README.md" - текущий файл.
  - Файл "emails.zip" - архив с таблицей анализируемых данных с признаками и таргетом.
  - Файл "main.ipynb" - jupyter-файл с анализом данных и обучением моделей и ансамблей.
+
+## Результаты
+В приведённых ниже таблицах представлены основные результаты лучших одиночных моделей (из scikit-learn), ансамблей моделей (из scikit-learn) и CatBoost-ансамблей по 3-м метрикам: LogLoss, F1-score и P4-score.
+|Имя модели|Вид модели|LogLoss|
+|-|-|-|
+|"MLPClassifier_t_lbfgs"|Одиночная модель|1.427816|
+|"HistGradientBoostingClassifier_11_0"|Ансамбль из sk-learn|1.532291|
+|"CB_Logloss_Newton_Balanced_CrossEntr_Plain_MVS_5_LG_L2_lft"|CatBoost-ансамбль|1.288517|
+
+|Имя модели|Вид модели|F1-score|
+|-|-|-|
+|"MLPClassifier_t_lbfgs"|Одиночная модель|0.934609|
+|"HistGradientBoostingClassifier_11_0"|Ансамбль из sk-learn|0.931464|
+|"CB_Logloss_Newton_Balanced_CrossEntr_Plain_MVS_5_LG_L2_lft"|CatBoost-ансамбль|0.942989|
+
+|Имя модели|Вид модели|P4-score|
+|-|-|-|
+|"MLPClassifier_t_lbfgs"|Одиночная модель|0.952739|
+|"HistGradientBoostingClassifier_11_0"|Ансамбль из sk-learn|0.949952|
+|"CB_Logloss_Newton_Balanced_CrossEntr_Plain_MVS_5_LG_L2_lft"|CatBoost-ансамбль|0.958225|
